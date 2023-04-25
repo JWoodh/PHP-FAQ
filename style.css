@@ -1,0 +1,159 @@
+body {
+  background-image: linear-gradient(to right, #164a41, #4d774e, #9dc88d);
+  color: whitesmoke;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+
+#nonslidebody{
+  overflow-x: hidden;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #323232;
+    overflow: hidden;
+    display: flex;
+    border: red;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f1b24a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #9dc88d;
+  color: white;
+}
+
+#logout {
+  align-self: flex-end;
+}
+
+#popup{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+#popupinnhold{
+  background-color: gold;
+  margin: 15% auto;
+  padding: 20px 30px 20px 30px;
+  width: 70%;
+}
+
+#popupinnhold p{
+  color: red;
+}
+
+#lukkpopup{
+  color: #787878;
+  float: right;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+#lukkpopup:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.forms{
+  margin-left: 5%;
+  font-size: larger;
+  /* background-color: #f1b24a;
+  padding: 1%;
+  border-radius: 100% 0 0 100%; */
+}
+
+@keyframes oransjeslide{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.oransje{
+  animation: 1s ease-out 0s 1 oransjeslide;
+  height: 25vh;
+  background-color: #f1b24a;
+  margin:7% 0 0 20%;
+  overflow: hidden;
+}
+
+.footer{
+  height: 23vh;
+  /* background-color: #E1EEDD; */
+  width: 80%;
+  margin: 0 0 10px 10px;
+}
+
+#footerline{
+  width: 99.9%;
+  position: absolute;
+  margin: 0 0 200px -10px;
+}
+
+#kontaktinfo{
+  margin-top: 5px;
+}
+
+/* FAQ side */
+.form, .container{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes faqslide{
+  0%{
+    transform: translateY(-200%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+.faq{
+  animation: 1s ease-out 0s 1 faqslide;
+  width: 20%;
+  margin: 0% 3%;
+}
+
+
+.faqtext{
+  text-align: center;
+}
+
+#answerbutton{
+  align-self: center;
+}
+
+.midtstill{
+  text-align: center;
+  color: #f1b24a;
+}
