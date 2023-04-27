@@ -1,2 +1,4 @@
 slette spørsmål
 sette opp oversikt over brukere
+
+Må kanskje sette opp så den setter id- og alt av spillrelaterte kolonner når den lager brukere, får se på det etter connection funker   

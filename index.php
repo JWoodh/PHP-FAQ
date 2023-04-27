@@ -5,6 +5,7 @@ if(isset($_SESSION['privileg'])){
     unset($_SESSION['privileg']);
 }
 include_once 'header.php';
+include_once 'conn.php';
 ?>
 
 <div id="popup">
@@ -34,10 +35,6 @@ include_once 'header.php';
         //Gjøre om POST-data til variabler
         $brukernavn = $_POST['brukernavn'];
         $passord = $_POST['passord'];
-        
-        //Koble til databasen
-        $kobling = mysqli_connect('localhost', 'root', '', 'phplogin')
-            or die('Error connecting to MySQL server.');
         
         //Gjøre klar SQL-strengen
         $sql = "SELECT * FROM users WHERE username='$brukernavn' AND password='$passord'";

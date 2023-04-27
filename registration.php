@@ -1,6 +1,7 @@
 <?php
 $active_page = 'registration';
 include_once 'header.php';
+include_once 'conn.php';
 ?>
 <div id="popup">
     <div id="popupinnhold">
@@ -29,10 +30,6 @@ if (isset($_POST['submit'])) {
     $brukernavn = $_POST['brukernavn'];
     $passord = $_POST['passord'];
     $admin = 0;
-
-    //Koble til databasen
-    $kobling = mysqli_connect('localhost', 'root', '', 'phplogin')
-        or die('Error connecting to MySQL server.');
 
     $sql = "SELECT * FROM users WHERE username='$brukernavn'";
 
