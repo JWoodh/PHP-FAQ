@@ -32,7 +32,7 @@ if (isset($_SESSION['privileg'])) {
         $get = "SELECT question,answer FROM questions WHERE answer != ''";
         $result1 = mysqli_query($kobling, $get);
         while ($row = mysqli_fetch_array($result1)) {
-            echo '<div class="faq">';
+            echo "<div tabindex='0' class='faq'>";
             echo '<h3 class="faqtext">';
             echo $row['question'];
             echo '</h3>';

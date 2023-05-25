@@ -29,11 +29,17 @@ if (isset($_POST['submit'])) {
     //Definere variabler
     $brukernavn = $_POST['brukernavn'];
     $passord = $_POST['passord'];
+    $health = 100;
+    $weapon = 'branch';
+    $pet = 'goldfish';
+    $room = 0;
+    $weaponIndex = 1;
+    $petIndex = 5;
     $admin = 0;
 
     $sql = "SELECT * FROM users WHERE username='$brukernavn'";
 
-    //Utføre spørringen
+    // Utføre spørringen
     $result = mysqli_query($kobling, $sql)
         or die('Error querying database.');
 
@@ -46,11 +52,12 @@ if (isset($_POST['submit'])) {
         }
     } else {
         //Gjøre klar SQL-strengen
-        $sqlin = "INSERT INTO users VALUES ('$brukernavn','$passord','$admin')";
+        $sqlin = "INSERT INTO users (username, password, health, weapon, pet, room, weaponIndex, petIndex, admin) VALUES ('$brukernavn','$passord', '$health', '$weapon', '$pet', '$room', '$weaponIndex', '$petIndex', '$admin')";
 
         //Utføre spørringen
         $resultin = mysqli_query($kobling, $sqlin)
             or die('Error querying database.');
+
         if ($resultin) {
             session_start();
             $_SESSION['privileg'] = 0;
@@ -78,15 +85,15 @@ if (isset($_POST['submit'])) {
 </script>
 <?php
 
-//Sjekke om spørringen gir resultater
-if ($result) {
-    //Gyldig login
-    session_start();
-    $_SESSION["privileg"] = '0';
-    header("location: faq.php");
-} else {
-    //Ugyldig login
-    echo "Noe gikk galt, prøv igjen!";
-}
+// //Sjekke om spørringen gir resultater
+// if ($result) {
+//     //Gyldig login
+//     session_start();
+//     $_SESSION["privileg"] = '0';
+//     header("location: faq.php");
+// } else {
+//     //Ugyldig login
+//     echo "Noe gikk galt, prøv igjen!";
+// }
 
 ?>

@@ -19,9 +19,9 @@ include_once 'conn.php';
 <form method="post">
     
     <label for="brukernavn">Brukernavn:</label>
-    <input type="text" name="brukernavn" /><br />
+    <input type="text" name="brukernavn" id="brukernavn"/><br />
     <label for="passord">Passord:</label>
-    <input type="password" name="passord" /><br />
+    <input type="password" name="passord" id="passord"/><br />
     <br>
     <input type="submit" value="Logg inn" name="submit" />
 </form>
