@@ -12,6 +12,8 @@ if (isset($_SESSION['privileg'])) {
     include_once 'header.php';
 }
 ?>
-    <h1 class="midtstill">Brukerstøtte wooohoo</h1>
+    <h1 class="midtstill">Brukerstøtte</h1>
+    <div class="faq"><a href="https://udeoslokommuneno-my.sharepoint.com/:v:/r/personal/jowoa002_osloskolen_no/Documents/IM/Java/Sp%C3%A6ll/Spaell/Oppl%C3%A6ring%20sluttbruker.mp4?csf=1&web=1&e=wxFhY1">Opplæringsvideo for sluttbruker</a></div>
+    <div></div>
 </body>
 </html>
