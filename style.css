@@ -160,5 +160,6 @@ body {
 
 #link{
   text-decoration: none;
-  background-color: whitesmoke;
+  background-color: #f1b24a;
+  font-size: larger;
 }
