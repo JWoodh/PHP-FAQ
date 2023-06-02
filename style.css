@@ -157,3 +157,8 @@ body {
   text-align: center;
   color: #f1b24a;
 }
+
+#link{
+  text-decoration: none;
+  background-color: whitesmoke;
+}
