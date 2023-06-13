@@ -6,7 +6,7 @@ include_once 'conn.php';
 <div id="popup">
     <div id="popupinnhold">
         <p id="lukkpopup" onclick="lukk()">x</p>
-        <p>Brukernavn eller passord er feil</p>
+        <p>Brukeren finnes allerede🥺😿</p>
     </div>
 </div>
 
