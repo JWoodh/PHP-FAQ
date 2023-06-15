@@ -36,7 +36,7 @@ if (isset($_SESSION['privileg'])) {
             echo '<h3 class="faqtext">';
             echo $row['question'];
             echo '</h3>';
-            echo '<p class="faqtext">';
+            echo '<p class="faqtext">'; 
             echo $row['answer'];
             echo '</p> </div>';
         }
